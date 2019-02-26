@@ -17,8 +17,8 @@ export function SidebarItem({ selected = false }: SidebarItemProps) {
   const { t } = useTranslation();
 
   return (
-    <div className="sidebar-item">
-      <img className="sidebar-item-img" src={selected ? menuIconActive : menuIcon} alt={t('Navigation item')}/>
+    <div className="sidebar--item">
+      <img className="sidebar--item-img" src={selected ? menuIconActive : menuIcon} alt={t('Navigation item')}/>
     </div>
   );
 }
@@ -28,10 +28,10 @@ export function Sidebar() {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-body">
-        <img src={appIcon} className="sidebar-logo" alt={t('App icon')}/>
+      <div className="sidebar--body">
+        <img src={appIcon} className="sidebar--logo" alt={t('App icon')}/>
 
-        <div className="sidebar-navigation">
+        <div className="sidebar--navigation">
           {sidebarItems.map(({ selected }, i: number) =>
             <SidebarItem key={i} selected={selected}/>
           )}

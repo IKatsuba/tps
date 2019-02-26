@@ -4,20 +4,31 @@
   width: 100%;
   background-color: $primaryBackground;
   display: flex;
+  justify-content: space-between;
 
-  .currency-card {
-    margin: 1.1rem 0.75rem;
+  .header--currencies {
+    display: flex;
 
-    &:first-child {
-      margin-left: 2rem;
+    .currency-card {
+      margin: 1.1rem 0.75rem;
+
+      &:first-child {
+        margin-left: 2rem;
+      }
+
+      .secondary-text {
+        font-size: 0.8rem;
+      }
+
+      h3 {
+        font-family: Rubik;
+      }
     }
+  }
 
-    .secondary-text {
-      font-size: 0.8rem;
-    }
+  .header--language-switcher {
+    display: flex;
 
-    h3 {
-      font-family: Rubik;
-    }
+    align-items: center;
   }
 }

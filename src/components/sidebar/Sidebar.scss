@@ -11,17 +11,17 @@
 
   overflow-y: auto;
 
-  .sidebar-logo {
+  .sidebar--logo {
     padding: 1.25rem;
   }
 
-  .sidebar-navigation {
+  .sidebar--navigation {
 
-    .sidebar-item {
+    .sidebar--item {
       padding: 1.5rem 0;
       cursor: pointer;
 
-      .sidebar-item-img {
+      .sidebar--item-img {
         margin: 0 auto;
         display: block;
       }
