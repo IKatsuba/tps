@@ -1,4 +1,4 @@
-import { Languages } from "../i18n";
+import { Languages } from '../i18n';
 
 export enum Currencies {
   Rub = 'rub'

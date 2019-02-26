@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Sidebar } from './components/sidebar';
-import { store, StoreContext } from "./store";
-import { Header } from "./components/header";
-import { BonusesPage } from "./components/bonuses-page";
-import './i18n';
 import './App.scss';
+import { BonusesPage } from './components/bonuses-page';
+import { Header } from './components/header';
+import { Sidebar } from './components/sidebar';
+import './i18n';
+import { store, StoreContext } from './store';
 
 class App extends Component {
-  render() {
+  public render() {
     return (
       <StoreContext.Provider value={store}>
         <Sidebar/>

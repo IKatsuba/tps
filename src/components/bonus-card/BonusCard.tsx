@@ -1,10 +1,11 @@
 import React, { SyntheticEvent } from 'react';
-import { Bonus } from "../../store";
-import { TextField } from "../text-field";
-import { Button, ButtonTypes } from "../button";
-import { useTranslation } from "react-i18next";
-import './BonusCard.scss';
+import { useTranslation } from 'react-i18next';
 import copyIcon from '../../icons/copy.svg';
+import { Bonus } from '../../store';
+import { Button, ButtonTypes } from '../button';
+import { TextField } from '../text-field';
+
+import './BonusCard.scss';
 
 export interface BonusCardProps {
   bonus: Bonus;

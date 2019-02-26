@@ -1,7 +1,7 @@
-import { BehaviorSubject, combineLatest, defer, Observable, Subject } from "rxjs";
-import { debounceTime, map, pluck } from "rxjs/operators";
 import { createContext } from 'react';
-import { Currencies } from "../utils";
+import { BehaviorSubject, combineLatest, defer, Observable, Subject } from 'rxjs';
+import { debounceTime, map, pluck } from 'rxjs/operators';
+import { Currencies } from '../utils';
 
 export interface Bonus {
   title: string;
@@ -30,10 +30,10 @@ export class StoreRepository {
 }
 
 export class Store {
-  private state = new Subject<State>();
-  private filter = new BehaviorSubject<string>('');
+  private readonly state = new Subject<State>();
+  private readonly filter = new BehaviorSubject<string>('');
 
-  constructor(private repository: StoreRepository) {
+  constructor(private readonly repository: StoreRepository) {
     this.repository.fetch().subscribe(
       (data) => this.state.next(data),
       error => this.state.error(error)

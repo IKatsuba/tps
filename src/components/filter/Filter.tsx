@@ -1,8 +1,8 @@
 import React from 'react';
-import { Translation, useTranslation } from "react-i18next";
-import { Button } from "../button";
+import { Translation, useTranslation } from 'react-i18next';
+import { Button } from '../button';
+import { TextField } from '../text-field';
 import './Filter.scss';
-import { TextField } from "../text-field";
 
 export interface FilterProps {
   onChange: (filter: string) => void;

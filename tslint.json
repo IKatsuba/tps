@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@katsuba/tslint"
+  ],
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "interface-name": false
+  }
+}

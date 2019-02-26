@@ -1,5 +1,5 @@
-import { Component, ReactNode } from "react";
-import { Observable, Subscription } from "rxjs";
+import { Component, ReactNode } from 'react';
+import { Observable, Subscription } from 'rxjs';
 
 export interface StreamBuilderProps {
   stream: Observable<any>;

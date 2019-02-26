@@ -1,11 +1,11 @@
-import React, { Component, Fragment, ReactNode } from "react";
-import { HeaderData, StoreContext } from "../../store";
-import { ConnectionState, Snapshot, StreamBuilder } from "../stream-builder";
+import i18next from 'i18next';
+import React, { Component, Fragment, ReactNode } from 'react';
+import { Translation } from 'react-i18next';
+import { Languages } from '../../i18n';
+import { HeaderData, StoreContext } from '../../store';
+import { Currencies, formatCurrency } from '../../utils';
+import { ConnectionState, Snapshot, StreamBuilder } from '../stream-builder';
 import './Header.scss';
-import { Translation } from "react-i18next";
-import { Currencies, formatCurrency } from "../../utils";
-import i18next from "i18next";
-import { Languages } from "../../i18n";
 
 export interface CurrencyCardProps {
   price: number;
@@ -21,11 +21,11 @@ export function CurrencyCard({ price, currency }: CurrencyCardProps) {
       </span>
       <h3>{formatCurrency(i18next.language as Languages, price, currency)}</h3>
     </div>
-  )
+  );
 }
 
 export class Header extends Component {
-  static contextType = StoreContext;
+  public static contextType = StoreContext;
   public context!: React.ContextType<typeof StoreContext>;
 
   public render(): React.ReactNode {

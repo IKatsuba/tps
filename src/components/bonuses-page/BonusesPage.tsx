@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { StoreContext } from "../../store";
-import { Translation } from "react-i18next";
-import { Filter } from "../filter";
-import { StreamBuilder } from "../stream-builder";
-import { BonusList } from "../bonus-list";
+import React, { Component } from 'react';
+import { Translation } from 'react-i18next';
+import { StoreContext } from '../../store';
+import { BonusList } from '../bonus-list';
+import { Filter } from '../filter';
+import { StreamBuilder } from '../stream-builder';
 import './BonusesPage.scss';
 
 
 export class BonusesPage extends Component {
-  static contextType = StoreContext;
+  public static contextType = StoreContext;
   public context!: React.ContextType<typeof StoreContext>;
 
-  private filterChangeHandle = (filter: string) =>
+  private readonly filterChangeHandle = (filter: string) =>
     this.context.applyFilter(filter || '');
 
   public render(): React.ReactNode {
