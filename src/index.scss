@@ -1,0 +1,41 @@
+@import '~normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400|Rubik:300,400');
+@import './theme.scss';
+
+html {
+  font-size: $fontSize;
+}
+
+body {
+  background-color: $mainBackground;
+}
+
+h1 {
+  color: $primaryText;
+  font-size: 2.4rem;
+  font-family: Roboto;
+  font-weight: lighter;
+}
+
+h2 {
+  color: $primaryText;
+  font-size: 1.8rem;
+  font-family: Roboto;
+  font-weight: lighter;
+}
+
+h3 {
+  color: $primaryText;
+  font-size: 1.6rem;
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+h1, h2, h3, .secondary-text {
+  margin: 0;
+}
+
+.secondary-text {
+  font-family: Roboto;
+  color: $secondaryText;
+}

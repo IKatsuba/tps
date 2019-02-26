@@ -1,0 +1,30 @@
+@import '../../theme';
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5rem;
+
+  background-color: $grayBlue;
+
+  overflow-y: auto;
+
+  .sidebar-logo {
+    padding: 1.25rem;
+  }
+
+  .sidebar-navigation {
+
+    .sidebar-item {
+      padding: 1.5rem 0;
+      cursor: pointer;
+
+      .sidebar-item-img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../theme";
+
+.header {
+  width: 100%;
+  background-color: $primaryBackground;
+  display: flex;
+
+  .currency-card {
+    margin: 1.1rem 0.75rem;
+
+    &:first-child {
+      margin-left: 2rem;
+    }
+
+    .secondary-text {
+      font-size: 0.8rem;
+    }
+
+    h3 {
+      font-family: Rubik;
+    }
+  }
+}

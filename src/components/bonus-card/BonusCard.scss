@@ -1,0 +1,29 @@
+@import "../../theme";
+
+.bonus-card {
+  padding: 1.5rem 2rem;
+  background-color: $primaryBackground;
+  margin-top: 1.5rem;
+  display: flex;
+
+  .bonus-card--description, .bonus-card--actions {
+    flex: 1 1 50%;
+  }
+
+  .bonus-card--description {
+    .secondary-text {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .bonus-card--actions {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .bonus-card--actions-field, .bonus-card--actions-link {
+      flex: 1 1 50%;
+    }
+  }
+}
