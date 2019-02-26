@@ -28,12 +28,13 @@ export function BonusCard({ bonus }: BonusCardProps) {
       </div>
       <div className="bonus-card--actions">
         <TextField
+          id={bonus.title}
           onFocus={focusHandler}
           className="bonus-card--actions-field"
           label={<div>{t('Promocode')}</div>}
           readOnly={true}
           value={bonus.promocode}
-          postfix={<img src={copyIcon}/>}
+          postfix={<img src={copyIcon} alt={t('Copy icon')}/>}
         />
         <Button
           className="bonus-card--actions-link"
