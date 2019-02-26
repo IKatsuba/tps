@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.scss';
 import { BonusesPage } from './components/bonuses-page';
+import { Footer } from './components/footer';
 import { Header } from './components/header';
 import { Sidebar } from './components/sidebar';
 import './i18n';
@@ -11,10 +12,13 @@ class App extends Component {
     return (
       <StoreContext.Provider value={store}>
         <Sidebar/>
+
         <div className="app-body">
           <Header/>
 
           <BonusesPage/>
+
+          <Footer/>
         </div>
       </StoreContext.Provider>
     );
