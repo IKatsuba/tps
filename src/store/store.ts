@@ -50,7 +50,7 @@ export class Store {
       debounceTime(800),
       map(
         ([filter, bonuses]: [string, Bonus[]]) =>
-          bonuses.filter(bonus => bonus.title.toLowerCase().indexOf(filter.toLowerCase()) > -1)
+          bonuses.filter(bonus => bonus.title.toLowerCase().includes(filter.toLowerCase()))
       )
     );
   }
