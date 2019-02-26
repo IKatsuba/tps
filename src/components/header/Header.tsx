@@ -15,11 +15,11 @@ export interface CurrencyCardProps {
   description: ReactNode;
 }
 
-export function CurrencyCard({ price, currency }: CurrencyCardProps) {
+export function CurrencyCard({ price, currency, description }: CurrencyCardProps) {
   return (
     <div className="currency-card">
       <span className="secondary-text">
-        <Translation>{t => t('Balance')}</Translation>
+        {description}
       </span>
       <h3>
         <Translation>{(t, { i18n }) => formatCurrency(i18n.language as Languages, price, currency)}</Translation>
